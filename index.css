@@ -6,6 +6,7 @@
     display: flex;
     background-color: #be0c2c;
     padding: 10px 20px;
+    animation: navani 1s ease forwards;
 }
 .nav-items{
     align-items: center;
@@ -30,6 +31,7 @@ body{
 h1,h2,h3
 h4,h5,h6{
     margin: 0;
+    animation: leftSideAni 1s ease forwards;
 }
 .text-center{
     text-align: center;
@@ -71,7 +73,7 @@ img{
     color: #be0c2c;
     border: 0;
     text-transform: uppercase;
-    animation: navani 1s ease forwards;
+    
 
    
 
@@ -171,13 +173,11 @@ h1{
     font-weight: 900;
     font-size: 37px;
     margin-top: 20px;
-    animation: rightSideAni 1s ease forwards;
 }
 .main-heading h4{
     font-size: 25px;
     font-family: auto;
     font-weight: 400;
-    animation: topSideAni 1s ease forwards;
 }
 
 footer{
@@ -258,7 +258,6 @@ footer h2{
         width: 100%;
     }
 }
-/* Animation */
 @keyframes leftSideAni {
     0% {
         transform: translateX(-100px);
@@ -283,39 +282,4 @@ footer h2{
     }
 }
 
-@keyframes rightSideAni {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes topSideAni {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes SocialAni {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
